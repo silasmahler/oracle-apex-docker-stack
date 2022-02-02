@@ -174,6 +174,7 @@ END;
 
 alter user APEX_PUBLIC_USER identified by ${APEX_PASSWORD} account unlock;
 alter user APEX_REST_PUBLIC_USER identified by ${APEX_PASSWORD} account unlock;
+alter profile DEFAULT limit password_life_time UNLIMITED;
 
 exit;
 EOF
